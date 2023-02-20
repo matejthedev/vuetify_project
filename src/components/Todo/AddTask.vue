@@ -22,7 +22,7 @@ export default {
   },
   methods: {
     addTask() {
-      this.$store.commit('addTask', this.newTask)
+      this.$store.dispatch('addTask', this.newTask)
       this.newTask = ''
     }
   }
